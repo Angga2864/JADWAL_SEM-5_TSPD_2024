@@ -1,0 +1,110 @@
+body {
+  background-color: #2839f7;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.schedule-container {
+  text-align: center;
+  width: 90%;
+}
+
+h1 {
+  font-size: 1.7em;
+  margin-bottom: 20px;
+  color: #ffffff;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.date-time {
+  font-size: 0.9em;
+  margin: 20px 0;
+  color: #efdc0b;
+  font-weight: bold; /* Membuat teks menjadi tebal */
+  padding: 10px; /* Menambahkan padding untuk ruang di dalam frame */
+  border: 2px solid #ffffff; /* Menambahkan highlight frame dengan warna putih */
+  border-radius: 8px; /* Membuat sudut-sudut frame menjadi melengkung */
+  display: inline-block; /* Membuat elemen mengikuti ukuran konten */
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #444;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #292929;
+  color: #ffffff;
+  font-size: 0.8em;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.schedule-table th {
+  background-color: #333;
+  color: #efdc0b;
+  font-size: 0.9em;
+}
+
+.schedule-table td {
+  height: 100px;
+}
+
+.schedule-table td:hover {
+  transform: scale(1.1);
+}
+
+button {
+  background-color: #0ce900;
+  color: #1b1b1b;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #efdc0b;
+}
+
+.footer-logo {
+  width: 50px; /* Atur ukuran logo */
+  height: auto; /* Jaga proporsi logo */
+  margin-top: 10px; /* Jarak atas logo dari elemen lain di footer */
+  transition: transform 0.3s ease; /* Tambahkan efek saat hover */
+}
+
+.footer-logo:hover {
+  transform: scale(1.1); /* Sedikit memperbesar logo saat dihover */
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #03dac5, 0 0 20px #03dac5, 0 0 30px #03dac5, 0 0 40px #03dac5;
+  }
+  to {
+    text-shadow: 0 0 20px #ff0266, 0 0 30px #ff0266, 0 0 40px #ff0266, 0 0 50px #ff0266;
+  }
+}
